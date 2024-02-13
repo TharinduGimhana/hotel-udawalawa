@@ -56,14 +56,14 @@
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation">
                                         <li class="dropdown"><a href="index.html">Home</a>
-                                            <ul>
+                                            <!-- <ul>
                                                 <li><a href="index.html">Home 01</a></li>
                                                 <li><a href="index-2.html">Home 02</a></li>
                                                 <li><a href="index-3.html">Home 03</a></li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
-                                        <li class="dropdown"><a href="#">Rooms</a>
-                                            <ul>
+                                        <li class="dropdown"><a href="room-1.html">Rooms</a>
+                                            <!-- <ul>
                                                 <li><a href="room-1.html">Room 01</a>
                                                 </li>
                                                 <li><a href="room-2.html">Room 02</a>
@@ -74,25 +74,25 @@
                                                 </li>
                                                 <li><a href="room-details.html">Room Details</a></li>
                                                 <li><a href="room-details-2.html">Room Details 02</a></li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
-                                        <li class="dropdown"><a href="#">Pages</a>
-                                            <ul>
+                                        <li class="dropdown"><a href="about.html">About Us</a>
+                                            <!-- <ul>
                                                 <li><a href="about.html">About Us </a></li>
                                                 <li><a href="services.html">Our Services</a></li>
                                                 <li><a href="testimonial.html">Testimonials</a></li>
                                                 <li><a href="error.html">404 Page</a></li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
-                                        <li><a href="gallery.html">Portfolio</a></li>
-                                        <li class="dropdown"><a href="#">Blog</a>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <!-- <li class="dropdown"><a href="#">Blog</a>
                                             <ul>
                                                 <li><a href="blog-grid.html">Blog Grid</a></li>
                                                 <li><a href="blog-with-sidebar.html">Blog With Sidebar</a></li>
                                                 <li><a href="blog.html">Blog Classic</a></li>
                                                 <li><a href="blog-details.html">Blog Details</a></li>
                                             </ul>
-                                        </li>
+                                        </li> -->
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </div>
@@ -383,8 +383,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4">
                         <div class="title-box">
-                            <div class="sub-title">Discover Our Rooms</div>
-                            <h2 class="sec-title">Luxury Interior</h2>
+                            <div class="sub-title" id="subTitleGal"></div>
+                            <h2 class="sec-title" id="secTitleGal"></h2>
                         </div>
                     </div>
                     <div class="col-lg-8">
@@ -392,10 +392,10 @@
                         <div class="filters">
                             <ul class="filter-tabs filter-btns">
                                 <li class="filter active" data-role="button" data-filter=".all">All</li>
-                                <li class="filter" data-role="button" data-filter=".cat-1">Luxury</li>
-                                <li class="filter" data-role="button" data-filter=".cat-2">Family</li>
-                                <li class="filter" data-role="button" data-filter=".cat-3">Double Bed</li>
-                                <li class="filter" data-role="button" data-filter=".cat-4">Relax</li>
+                                <li class="filter" data-role="button" data-filter=".cat-1" id="roomCatOne"></li>
+                                <li class="filter" data-role="button" data-filter=".cat-2" id="roomCatTwo"></li>
+                                <li class="filter" data-role="button" data-filter=".cat-3" id="roomCatThree"></li>
+                                <li class="filter" data-role="button" data-filter=".cat-4" id="roomCatFour"></li>
                             </ul>
                         </div>
                     </div>
@@ -409,12 +409,12 @@
                         <div class="gallery-block-one masonry-item all cat-1 col-lg-4 col-md-6">
                             <div class="gallery-one-box">
                                 <div class="gallery-one-image">
-                                    <img src="assets/images/gallery/gallery-1.jpg" alt="">
+                                    <img id="galleryOne" alt="">
                                 </div>
                                 <div class="gallery-one-content">
-                                    <h4 class="gallery-one-title">Family Room</h4>
-                                    <div class="gallery-one-text">Starting From $19.00 /Night <span
-                                            class="gallery-one-rating">4.05 <i class="far fa-star"></i></span></div>
+                                    <h4 class="gallery-one-title" id="galleryOneTtile"></h4>
+                                    <div class="gallery-one-text" id="galleryOneText"> <span
+                                            class="gallery-one-rating" id="galleryOneRate"> <i class="far fa-star"></i></span></div>
                                     <div class="gallery-one-like"><i class="far fa-heart"></i></div>
                                 </div>
                             </div>
@@ -422,12 +422,12 @@
                         <div class="gallery-block-one masonry-item all cat-2 col-lg-8 col-md-12">
                             <div class="gallery-one-box">
                                 <div class="gallery-one-image">
-                                    <img src="assets/images/gallery/gallery-2.jpg" alt="">
+                                    <img id="galleryTwo" alt="">
                                 </div>
                                 <div class="gallery-one-content">
-                                    <h4 class="gallery-one-title">Family Room</h4>
-                                    <div class="gallery-one-text">Starting From $19.00 /Night <span
-                                            class="gallery-one-rating">4.05 <i class="far fa-star"></i></span></div>
+                                    <h4 class="gallery-one-title" id="galleryTwoTtile"></h4>
+                                    <div class="gallery-one-text" id="galleryTwoText"><span
+                                            class="gallery-one-rating" id="galleryTwoRate"> <i class="far fa-star"></i></span></div>
                                     <div class="gallery-one-like"><i class="far fa-heart"></i></div>
                                 </div>
                             </div>
@@ -435,12 +435,12 @@
                         <div class="gallery-block-one masonry-item all cat-3 col-lg-4 col-md-6">
                             <div class="gallery-one-box">
                                 <div class="gallery-one-image">
-                                    <img src="assets/images/gallery/gallery-3.jpg" alt="">
+                                    <img id="galleryThree" alt="">
                                 </div>
                                 <div class="gallery-one-content">
-                                    <h4 class="gallery-one-title">Family Room</h4>
-                                    <div class="gallery-one-text">Starting From $19.00 /Night <span
-                                            class="gallery-one-rating">4.05 <i class="far fa-star"></i></span></div>
+                                    <h4 class="gallery-one-title" id="galleryThreeTtile"></h4>
+                                    <div class="gallery-one-text" id="galleryThreeText"><span
+                                            class="gallery-one-rating"  id="galleryThreeRate"><i class="far fa-star"></i></span></div>
                                     <div class="gallery-one-like"><i class="far fa-heart"></i></div>
                                 </div>
                             </div>
@@ -448,12 +448,12 @@
                         <div class="gallery-block-one masonry-item all cat-4 col-lg-4 col-md-6">
                             <div class="gallery-one-box">
                                 <div class="gallery-one-image">
-                                    <img src="assets/images/gallery/gallery-4.jpg" alt="">
+                                    <img id="galleryFour" alt="">
                                 </div>
                                 <div class="gallery-one-content">
-                                    <h4 class="gallery-one-title">Family Room</h4>
-                                    <div class="gallery-one-text">Starting From $19.00 /Night <span
-                                            class="gallery-one-rating">4.05 <i class="far fa-star"></i></span></div>
+                                    <h4 class="gallery-one-title" id="galleryFourTtile"></h4>
+                                    <div class="gallery-one-text" id="galleryFourText"> <span
+                                            class="gallery-one-rating" id=""> <i class="far fa-star"></i></span></div>
                                     <div class="gallery-one-like"><i class="far fa-heart"></i></div>
                                 </div>
                             </div>
@@ -461,12 +461,12 @@
                         <div class="gallery-block-one masonry-item all cat-2 col-lg-4 col-md-6">
                             <div class="gallery-one-box">
                                 <div class="gallery-one-image">
-                                    <img src="assets/images/gallery/gallery-5.jpg" alt="">
+                                    <img id="galleryFive" alt="">
                                 </div>
                                 <div class="gallery-one-content">
-                                    <h4 class="gallery-one-title">Family Room</h4>
-                                    <div class="gallery-one-text">Starting From $19.00 /Night <span
-                                            class="gallery-one-rating">4.05 <i class="far fa-star"></i></span></div>
+                                    <h4 class="gallery-one-title" id="galleryFiveTtile"></h4>
+                                    <div class="gallery-one-text" id="galleryFiveText"><span
+                                            class="gallery-one-rating" id=""> <i class="far fa-star"></i></span></div>
                                     <div class="gallery-one-like"><i class="far fa-heart"></i></div>
                                 </div>
                             </div>
